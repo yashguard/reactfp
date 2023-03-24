@@ -1,0 +1,183 @@
+
+:root {
+    --main-color: #ED2775;
+    --white-color: #ffffff;
+    --dark-color: #262A37;
+    --hero-bg: linear-gradient(42.99deg, #3F75FF 10.19%, #44A6FF 50.48%, #4ADEFF 94.28%);
+    --paragraph-color: #716c80;
+    --gradiant-color: linear-gradient(44.44deg, #ED2775 7.79%, #FF7448 94.18%);
+    --gradiant-color-opp: linear-gradient(224.44deg, #ED2775 7.79%, #FF7448 94.18%);
+    --shape-1: linear-gradient(45.24deg, #9F5FF1 5.99%, #FF54B0 91.87%);
+    --shape-2: linear-gradient(44.44deg, #ED2775 7.79%, #FF7448 94.18%);
+    --shape-3: linear-gradient(44.44deg, #3F75FF 7.79%, #4ADEFF 94.18%);
+    --shape-4: linear-gradient(44.44deg, #FF4B3F 7.79%, #FFAC30 94.18%);
+    --download-bg: linear-gradient(76.92deg, #C89CFF 0%, #FF54B0 52.08%, #FF9F5A 100%);
+    --stars-color: #FFCA40;
+    --footer-bg: #f4f8fc;
+}
+.footer-section {
+    background-color: var(--footer-bg);
+}
+
+.footer-section .first-column p {
+    color: var(--paragraph-color);
+    font-weight: 400;
+    font-size: 14px;
+    margin: 15px 0px;
+}
+
+.footer-section .first-column .apps i {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 5px;
+    color: var(--paragraph-color);
+    background-color: var(--white-color);
+    border-radius: 100%;
+    z-index: 1;
+    transition: all 0.3s linear;
+}
+
+.footer-section .first-column .apps i:hover {
+    color: var(--white-color);
+}
+
+.footer-section .first-column .apps i::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: var(--gradiant-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+    z-index: -1;
+}
+
+.footer-section .first-column .apps i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.footer-section .second-column h2,
+.footer-section .third-column h2,
+.footer-section .fourth-column h2,
+.footer-section .fifth-column h2 {
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-section .second-column li,
+.footer-section .third-column li,
+.footer-section .fourth-column li {
+    margin-bottom: 12px;
+}
+
+.footer-section .second-column a,
+.footer-section .third-column a,
+.footer-section .fourth-column a,
+.footer-section .fifth-column p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    transition: all 0.3s linear;
+}
+
+.footer-section .second-column a:hover,
+.footer-section .third-column a:hover,
+.footer-section .fourth-column a:hover {
+    color: var(--main-color);
+}
+
+.footer-section .fifth-column form {
+    margin-top: 20px;
+}
+
+.footer-section .fifth-column form input {
+    display: block;
+    width: 65%;
+    height: 55px;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    background-color: var(--white-color);
+}
+
+.footer-section .fifth-column form input::placeholder {
+    color: var(--dark-color);
+    font-size: 16px;
+    transition: all 0.3s linear;
+}
+
+.footer-section .fifth-column form input:focus::placeholder {
+    color: var(--white-color);
+}
+
+.footer-section .fifth-column form a {
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 35%;
+    text-align: center;
+    background-color: var(--white-color);
+    z-index: 1;
+}
+
+.footer-section .fifth-column form a span {
+    color: var(--white-color);
+    line-height: 55px;
+    z-index: 1;
+}
+
+.footer-section .fifth-column form a::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 85%;
+    height: 80%;
+    background: var(--gradiant-color);
+    z-index: -1;
+}
+
+.footer {
+    background-color: var(--footer-bg);
+}
+
+.footer .container {
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 30px 0;
+}
+
+.footer p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+
+.footer p .bold {
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+.footer p .pink {
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.footer p .pink:hover {
+    color: var(--main-color);
+}
