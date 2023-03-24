@@ -1,9 +1,12 @@
 import './App.css';
 import './All.min.css';
+import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   return (
     <>
+      <Header />
       <section className="home-section">
         <div className="container row">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 padding-0">
@@ -39,6 +42,7 @@ function App() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
